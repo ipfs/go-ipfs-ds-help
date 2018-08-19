@@ -9,21 +9,27 @@
   "gxDependencies": [
     {
       "author": "jbenet",
-      "hash": "QmVG5gxteQNEMhrS8prJSmU2C9rebtFuTd3SYZ5kE3YZ5k",
+      "hash": "QmSpg1CvpXQQow5ernt1gNBXaXV6yxyNqi7XoeerWfzB5w",
       "name": "go-datastore",
-      "version": "3.0.0"
+      "version": "3.1.0"
     },
     {
       "author": "whyrusleeping",
-      "hash": "QmYjnkEL7i731PirfVH1sis89evN7jt4otSHw5D2xXXwUV",
+      "hash": "QmPSQnBKM9g7BaUcZCvswUJVscQ1ipjmwxN5PXCjkp9EQ7",
       "name": "go-cid",
-      "version": "0.7.25"
+      "version": "0.9.0"
     },
     {
       "author": "whyrusleeping",
       "hash": "QmfVj3x4D6Jkq9SEoi5n2NmoUomLwoeiwnYz2KQa15wRw6",
       "name": "base32",
       "version": "0.0.2"
+    },
+    {
+      "author": "multiformats",
+      "hash": "QmPnFwZ2JXKnXgMw8CdBPxn7FWh6LLdjUjxV1fKHuJnkr8",
+      "name": "go-multihash",
+      "version": "1.0.8"
     }
   ],
   "gxVersion": "0.12.1",

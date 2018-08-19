@@ -5,6 +5,7 @@ package dshelp
 import (
 	cid "github.com/ipfs/go-cid"
 	"github.com/ipfs/go-datastore"
+	mh "github.com/multiformats/go-multihash"
 	"github.com/whyrusleeping/base32"
 )
 
@@ -22,15 +23,20 @@ func BinaryFromDsKey(k datastore.Key) ([]byte, error) {
 }
 
 // CidToDsKey creates a Key from the given Cid.
-func CidToDsKey(k *cid.Cid) datastore.Key {
-	return NewKeyFromBinary(k.Bytes())
+func CidToDsKey(k cid.Cid) datastore.Key {
+	return NewKeyFromBinary(k.Hash())
 }
 
-// DsKeyToCid converts the given Key to its corresponding Cid.
-func DsKeyToCid(dsKey datastore.Key) (*cid.Cid, error) {
+// MultihashToDsKey creates a Key from the given Cid.
+func MultihashToDsKey(k mh.Multihash) datastore.Key {
+	return NewKeyFromBinary(k)
+}
+
+// DsKeyToMultihash converts the given Key to its corresponding Cid.
+func DsKeyToMultihash(dsKey datastore.Key) (mh.Multihash, error) {
 	kb, err := BinaryFromDsKey(dsKey)
 	if err != nil {
 		return nil, err
 	}
-	return cid.Cast(kb)
+	return mh.Cast(kb)
 }
