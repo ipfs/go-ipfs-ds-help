@@ -20,10 +20,10 @@
       "version": "0.9.3"
     },
     {
-      "author": "whyrusleeping",
-      "hash": "QmfVj3x4D6Jkq9SEoi5n2NmoUomLwoeiwnYz2KQa15wRw6",
+      "author": "Golang",
+      "hash": "QmPbbYin7KBd1Y1BfUe15vHzwJiioyi3wtKQTtXWWf8SC5",
       "name": "base32",
-      "version": "0.0.2"
+      "version": "0.0.3"
     }
   ],
   "gxVersion": "0.12.1",
