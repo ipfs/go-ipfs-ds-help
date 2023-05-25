@@ -20,7 +20,6 @@
 
 - [Install](#install)
 - [Usage](#usage)
-- [Contribute](#contribute)
 - [License](#license)
 
 ## Install
@@ -40,12 +39,6 @@ import "github.com/ipfs/go-ipfs-ds-help"
 Check the [GoDoc documentation](https://godoc.org/github.com/ipfs/go-ipfs-ds-help)
 
 This module uses [Gx](https://github.com/whyrusleeping/gx) to manage dependencies. You can use `make all` to build it with the `gx` dependencies.
-
-## Contribute
-
-PRs accepted.
-
-Small note: If editing the README, please conform to the [standard-readme](https://github.com/RichardLitt/standard-readme) specification.
 
 ## License
 
